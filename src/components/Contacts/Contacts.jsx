@@ -7,16 +7,6 @@ export function Contacts() {
   const filter = useSelector(state => state.filter);
   const dispatch = useDispatch();
 
-  //   const [contacts, setContacts] = useState(() =>   JSON.parse(localStorage.getItem('contacts')) || []);
-  //   const [filter, setFilter] = useState('');
-
-  // useEffect(() => {
-  //   if (!JSON.stringify(contacts)) {
-  //     return;
-  //   }
-  //   localStorage.setItem('contacts', JSON.stringify(contacts));
-  // }, [contacts]);
-
   const filteredContacts = contacts => {
     return contacts.filter(contact => {
       return contact.name
